@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project data: raw downloads stay local; processed tables are committed
+data/raw/*
+!data/raw/.gitkeep
