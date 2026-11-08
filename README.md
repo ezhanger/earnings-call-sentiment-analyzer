@@ -19,3 +19,15 @@ results/      # metrics, SHAP values, charts
 tests/
 docs/         # design doc
 ```
+
+## Running the pipeline
+
+```
+uv sync
+uv run python -m ecsa.build   # Phase 1: calls, sentences, prices -> data/processed/
+uv run pytest
+```
+
+The first build downloads the 1.8 GB transcript file once into `data/raw/` (git-ignored), pulls
+earnings-release timestamps from SEC EDGAR, and caches daily prices from yfinance. The ticker list
+lives in `src/ecsa/__init__.py`.
