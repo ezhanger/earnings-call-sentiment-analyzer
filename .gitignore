@@ -222,3 +222,6 @@ __marimo__/
 # Project data: raw downloads stay local; processed tables are committed
 data/raw/*
 !data/raw/.gitkeep
+
+# Local planning notes (not committed)
+docs/implementation-plan.md
