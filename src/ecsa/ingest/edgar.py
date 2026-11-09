@@ -15,6 +15,7 @@ BASE = "https://data.sec.gov/submissions/"
 EXTRA_CIKS = {
     "GOOGL": [1288776],  # Google Inc., before the 2015 Alphabet reorganization
     "AVGO": [1441634, 1649338],  # Avago Technologies, Broadcom Ltd.
+    "XOM": [34088],  # Exxon Mobil Corp, before the 2026 holding-company reorganization
 }
 
 
